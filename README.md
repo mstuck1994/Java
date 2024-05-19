@@ -1,2 +1,2 @@
 # JavaPractice
-Random Java code
+Java code
