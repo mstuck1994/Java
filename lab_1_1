@@ -1,1 +1,46 @@
+*/ 
+One way to measure the amount of energy that is expended during exercise is to use metabolic equivalents (MET). Here are some METS for various activities:
+
+Running 6 MPH:	10 METS
+Basketball:	8 METS
+Sleeping:	1 MET
+
+The number of calories burned per minute may be estimated using the following formula:
+
+Calories / Minute = 0.0175 × MET × Weight in kilograms
+
+Write a program that calculates and outputs the total number of calories burned for a 150-pound person who runs 6 MPH for 30 minutes, plays basketball for 30 minutes, 
+and then sleeps for 6 hours. One kilogram is equal to 2.2 pounds.
+*/
+
+package chapter_1_labs;                                                        // package
+
+public class Lab1_1 {                                                          // class
+
+public static void main (String[] args) {                                      // main method
+
+Scanner keyboard = new Scanner(System.in);                                     // creating our Scanner object
+
+System.out.println("What is the person's weight in kilograms?")                // asking the user to provide a weight in kilograms
+double weight = keyboard.nextDouble();                                         // storing the user's response in the variable "weight" of data type double
+
+System.out.println("How long did the person do their activity in minutes?")    // asking the user to provide an activity duration in minutes
+int duration = keyboard.nextInt();                                             // storing the user's response in the variable "duration" of data type int
+
+int runningMETs = 10;                                                          // variables for METs associated with different activities
+int basketballMETs = 8;
+int sleepingMETs = 1;
+
+double running_calories_per_minute = 0.0175 * runningMETs * weight;
+double basketball_calories_per_minute = 0.0175 * basketballMETs * weight;
+double sleeping_calories_per_minute = 0.0175 * sleepingMETs * weight;
+
+System.out.println("A person weighing " + weight + " kilograms who runs 6 MPH for " + duration + " minutes will burn " +                 /* multiline print statement showing how many calories will be burned
+running_calories_per_minute + " per minute, or " + (running_calories_per_minute * duration) + " over " + duration + " minutes.";            per minute and for a set duration of running */
+
+System.out.println("A person weighing " + weight + " kilograms who plays basketball for " + duration + " minutes will burn " +           /* multiline print statement showing how many calories will be burned
+basketball_calories_per_minute + " per minute, or " + (basketball_calories_per_minute * duration) + " over " + duration + " minutes.";      per minute and for a set duration of playing basketball */
+
+System.out.println("A person weighing " + weight + " kilograms who sleeps for " + duration + " minutes will burn " +                     /* multiline print statement showing how many calories will be burned
+sleeping_calories_per_minute + " per minute, or " + (sleeping_calories_per_minute * duration) + " over " + duration + " minutes.";          per minute and for a set duration of sleeping */
 
