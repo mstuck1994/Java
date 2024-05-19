@@ -41,6 +41,9 @@ running_calories_per_minute + " per minute, or " + (running_calories_per_minute 
 System.out.println("A person weighing " + weight + " kilograms who plays basketball for " + duration + " minutes will burn " +           /* multiline print statement showing how many calories will be burned
 basketball_calories_per_minute + " per minute, or " + (basketball_calories_per_minute * duration) + " over " + duration + " minutes.";      per minute and for a set duration of playing basketball */
 
+}
+}
+
 System.out.println("A person weighing " + weight + " kilograms who sleeps for " + duration + " minutes will burn " +                     /* multiline print statement showing how many calories will be burned
 sleeping_calories_per_minute + " per minute, or " + (sleeping_calories_per_minute * duration) + " over " + duration + " minutes.";          per minute and for a set duration of sleeping */
 
